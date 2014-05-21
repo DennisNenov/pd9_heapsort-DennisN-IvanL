@@ -1,0 +1,25 @@
+//IVAN LIN
+//APCS pd09
+//HW41
+//2014-05-19
+
+public class Heapsort {
+    private ALHeap heap;
+    
+    public Heapsort () {
+ heap = new ALHeap ();
+    }
+    
+    public Integer[] sort( Integer[] data ) {
+ for (Integer i: data) {
+     heap.add (i);
+ }
+
+ Integer [] retArray - new Integer [data.length];
+ int counter = 0;
+
+ while ( !heap.isEmpty()) {
+     retArray [0] = heap.removeMin ();
+     counter ++;
+ }
+    }
